@@ -1,0 +1,15 @@
+head
+  include includes
+
+body
+  h1 Welcome!
+  p #{msg}
+  
+  br
+  
+  a(href='/logout', id='logout') log out.
+
+  if isAuthed
+    include add
+  else
+    include login

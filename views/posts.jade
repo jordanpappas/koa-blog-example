@@ -1,0 +1,14 @@
+head
+  include includes
+
+a(href='/') home.
+
+
+br
+
+each post in posts
+  ul
+    li #{post.title}
+    li #{post.created}
+    li #{post.body}
+  br

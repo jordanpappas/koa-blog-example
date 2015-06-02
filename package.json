@@ -1,0 +1,22 @@
+{
+  "name": "koa-mvc",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "dependencies": {
+    "koa-session": "^3.1.0",
+    "co-body": "^2.0.0",
+    "jade": "^1.10.0",
+    "koa": "^0.21.0",
+    "co-views": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run build && node --harmony index.js",
+    "build:css": "stylus assets/styles/main.styl -o dist/main.css",
+    "build:js": "browserify assets/scripts/main.js > dist/main.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "author": "Jordan Pappas <jordanpappas@yahoo.com>",
+  "license": "MIT"
+}
